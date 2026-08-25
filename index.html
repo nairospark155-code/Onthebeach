@@ -2,6 +2,17 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-364708644"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-364708644');
+    </script>
+
+    <meta name="trustpilot-one-time-domain-verification-id" content="b6efedf1-6448-420a-9578-72804b1e0162"/>
     <meta name="trustpilot-one-time-domain-verification-id" content="b6efedf1-6448-420a-9578-72804b1e0162"/>
     <title>On the beach Travel Compensation</title>
 
@@ -542,7 +553,10 @@
 
             const subject = 'Holiday Help Request - ' + (data.get('full_name') || 'New Submission');
             const mailtoLink = 'mailto:customerservicelivepro@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-
+            
+gtag('event', 'conversion', {
+    'send_to': 'AW-364708644/yjUtCOLmueccEKSG9K0B'
+});
             window.location.href = mailtoLink;
         });
     </script>
